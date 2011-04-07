@@ -67,9 +67,9 @@ class EStrongPassword extends CWidget {
 		Yii::app()->clientScript->registerCoreScript('jquery');
 
 		if ( $this->useMin )
-			$this->_jsFile = Yii::app()->assetManager->publish(Yii::getPathOfAlias('ext.EStrongPassword.js').'/digitialspaghetti.password.min.js');
+			$this->_jsFile = Yii::app()->assetManager->publish( dirname( __FILE__ ).'/js/digitialspaghetti.password.min.js');
 		else
-			$this->_jsFile = Yii::app()->assetManager->publish(Yii::getPathOfAlias('ext.EStrongPassword.js').'/digitalspaghetti.password.js');
+			$this->_jsFile = Yii::app()->assetManager->publish( dirname( __FILE__ ).'/js/digitalspaghetti.password.js');
 
 		Yii::app()->clientScript->registerScriptFile($this->_jsFile);
 
