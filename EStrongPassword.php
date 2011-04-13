@@ -77,7 +77,7 @@ class EStrongPassword extends CWidget {
 		$reqs = "{minChar: 5}";
 		if ($this->requirementOptions !== null )
 		{
-			$reqs = CJSON::encode($this->requirements);
+			$reqs = CJSON::encode($this->requirementOptions);
 		}
 
 		Yii::app()->clientScript->registerScript('strPass'.self::$id_count++,"jQuery('".$this->fieldName."').pstrength({$reqs});");
