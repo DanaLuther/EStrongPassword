@@ -57,7 +57,7 @@ To change the requirements, pass in your desired requirements as the 'requiremen
 
 		$this->widget('ext.EStrongPassword.EStrongPassword',
 				array('form'=>$form, 'model'=>$model, 'attribute'=>'password', 
-				'requirementsOptions'=>array('minChar'=>8,'one_special_char'=>true)
+				'requirementOptions'=>array('minChar'=>8,'one_special_char'=>true)
 		));
 		
 		?>
