@@ -42,7 +42,7 @@ class EStrongPassword extends CWidget {
 		}
 		if ($this->attribute === null)
 		{
-			if ($model->hasAttribute('password'))
+			if ($this->model->hasAttribute('password'))
 				$this->attribute = 'password';
 			else
 				throw new CHttpException(500, 'No attribute specified for strongPassword');
